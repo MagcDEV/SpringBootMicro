@@ -20,4 +20,8 @@ public class StudentService {
         return repository.findAll();
     }
 
+    public List<Student> findAllStudentsBySchool(Long schoolId) {
+        return repository.findAllBySchoolId(schoolId);
+    }
+
 }
